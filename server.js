@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect(process.env.mongodb+srv,//prajaktamane701_db_user:CQU2yJqAo3d9bXUG@cluster0.7pn1ltl.mongodb.net/?appName=Cluster0
+mongoose.connect(process.env.mongodb+srv,//admin:********@cluster0.7pn1ltl.mongodb.net/?appName=Cluster0
 )
     .then(() => console.log('✅ MongoDB Connected'))
     .catch(err => console.log('❌ MongoDB Error:', err.message));
